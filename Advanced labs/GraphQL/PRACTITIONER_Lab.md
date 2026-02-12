@@ -1,3 +1,8 @@
+---
+layout: default
+render_with_liquid: false
+---
+
 ## Labs Covered
 
 This write-up focuses on the following **PRACTITIONER-level labs** from the PortSwigger Web Security Academy related to **GraphQL API Vulnerabilities**:
@@ -672,5 +677,6 @@ Store and deliver to victum and lab is solved
 
 
 ---
+
 
 
