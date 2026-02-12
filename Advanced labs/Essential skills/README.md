@@ -31,4 +31,8 @@ Unlike the labs where the target vulnerability is known, real-world testing ofte
 
 To practice this skill, use **mystery labs** that hide the vulnerability type entirely. These exercises simulate real-world conditions and help sharpen your intuition and analytical thinking.
 
+
+[⬅ Go to Essential Skills Labs](./PRACTITIONER_Lab.md)
+
+
 ---
