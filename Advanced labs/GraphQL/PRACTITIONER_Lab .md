@@ -571,6 +571,8 @@ So, we have a mutation and a variable.
 
 We will create  python script to create alias like we neededin above scnerio to bypass passworf limit,
 To get the password of carlos
+
+
 **Note**: passwords are already provided to us
 
 ```python
@@ -589,6 +591,7 @@ for index, element in enumerate(passwords):
 query = "\n".join(mutations)
 print(query)
 ```
+
 
 We have run script in reptile and we have get the payload
 
@@ -669,4 +672,5 @@ Store and deliver to victum and lab is solved
 
 
 ---
+
 
