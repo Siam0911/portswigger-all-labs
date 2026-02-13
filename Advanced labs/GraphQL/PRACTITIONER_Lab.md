@@ -576,8 +576,6 @@ To get the password of carlos
 **Note**: passwords are already provided to us
 
 
-### Fixed Code:
-
 ```python
 passwords = "123456,password,12345678,qwerty".split(',')
 
@@ -594,6 +592,7 @@ for index, element in enumerate(passwords):
 query = "\n".join(mutations)
 print(query)
 ```
+
 
 
 
@@ -676,6 +675,7 @@ Store and deliver to victum and lab is solved
 
 
 ---
+
 
 
 
