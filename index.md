@@ -81,15 +81,6 @@ Labs are divided into the following groups:
 
 ---
 
-## 📊 Summary
-
-- ✅ **All PortSwigger Labs Covered**
-- 🧠 **From APPRENTICE to EXPERT**
-- 🛠 **Payloads, methodology, and tools provided**
-- 🔍 **Real-world exploitation practices**
-
----
-
 > ⚠️ **Disclaimer**: These writeups are for educational purposes only. Do not use on systems without authorization. Follow responsible disclosure and ethical hacking practices.
 
 ---
