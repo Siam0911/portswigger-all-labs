@@ -84,6 +84,6 @@ Labs are divided into the following groups:
 
 ---
 Happy hacking! 🚀
+
 ---
 
-Happy hacking! 🚀
