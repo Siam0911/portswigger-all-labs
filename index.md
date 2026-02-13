@@ -6,8 +6,7 @@ This repository contains **complete and categorized writeups** for every lab ava
 
 - Lab title, description, and objectives  
 - Step-by-step solution using real payloads  
-- Exploitation methodology  
-- Manual + Burp Suite techniques  
+- Exploitation methodology   
 
 > ✅ **Covers all labs across APPRENTICE, PRACTITIONER, and EXPERT levels.**
 
