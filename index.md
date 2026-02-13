@@ -83,7 +83,12 @@ Labs are divided into the following groups:
 > ⚠️ **Disclaimer**: These writeups are for educational purposes only. Do not use on systems without authorization. Follow responsible disclosure and ethical hacking practices.
 
 ---
-Happy hacking! 🚀
+
+```
+Happy hacking!
+```
 
 ---
+
+
 
