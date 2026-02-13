@@ -576,7 +576,7 @@ To get the password of carlos
 **Note**: passwords are already provided to us
 
 
-```javascript
+```python
 passwords = "123456,password,12345678,qwerty".split(',')
 
 mutations = []
@@ -676,6 +676,7 @@ Store and deliver to victum and lab is solved
 
 
 ---
+
 
 
 
