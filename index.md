@@ -8,11 +8,11 @@ This repository contains **complete and categorized writeups** for every lab ava
 - Step-by-step solution using real payloads  
 - Exploitation methodology   
 
-> ✅ **Covers all labs across APPRENTICE, PRACTITIONER, and EXPERT levels.**
+>  **Covers all labs across APPRENTICE, PRACTITIONER, and EXPERT levels.**
 
 ---
 
-## 🎯 Lab Categories
+##  Lab Categories
 
 Labs are divided into the following groups:
 
@@ -82,6 +82,8 @@ Labs are divided into the following groups:
 
 > ⚠️ **Disclaimer**: These writeups are for educational purposes only. Do not use on systems without authorization. Follow responsible disclosure and ethical hacking practices.
 
+---
+Happy hacking! 🚀
 ---
 
 Happy hacking! 🚀
