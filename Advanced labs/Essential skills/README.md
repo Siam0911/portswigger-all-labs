@@ -7,7 +7,7 @@ This section introduces broadly applicable skills to help you transition from la
 
 ---
 
-## Using Burp Scanner During Manual Testing
+## Using Burp Scanner During Manual Testing.
 
 Testing certain vulnerabilities—especially those involving numerous injection points—can be tedious and time-consuming. Manual testing alone may lead to missed critical flaws due to time constraints.
 
